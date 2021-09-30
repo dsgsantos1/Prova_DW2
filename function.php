@@ -6,7 +6,7 @@
     function getConnection() {
         try {
           $opcoes = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-          $conexao = new PDO('pgsql:host=localhost;dbname=web2p1', "postgres", "1234", $opcoes);
+          $conexao = new PDO('pgsql:host=ec2-100-24-169-249.compute-1.amazonaws.com;dbname=da0sfd736du9em', "iinxxkxehzuums", "37474b012aa066f73bd67f09056fa88e876bb8b27ef6e28a9c164b16bceb5685", $opcoes);
             return $conexao;
         } catch (PDOException $e) {
           return null;
